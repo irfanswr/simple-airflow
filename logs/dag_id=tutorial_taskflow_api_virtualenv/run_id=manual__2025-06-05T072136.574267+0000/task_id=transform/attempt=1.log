@@ -1,0 +1,11 @@
+{"timestamp":"2025-06-05T07:21:48.491010","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-06-05T07:21:48.491883","level":"info","event":"Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-06-05T07:21:48.678544Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-05T07:21:48.685109Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-05T07:21:48.686335Z","level":"info","event":"Current task name:transform","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-05T07:21:48.686815Z","level":"info","event":"Dag name:tutorial_taskflow_api_virtualenv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-05T07:21:48.687607Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-05T07:21:48.691846Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-05T07:21:48.692807Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): transform>","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-05T07:21:48.603105","level":"info","event":"Done. Returned value was: {'total_order_value': 1236.7}","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator"}
+{"timestamp":"2025-06-05T07:21:48.603524","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('01973ef7-7e7f-7a46-b1e9-e36ce6b48a98'), task_id='transform', dag_id='tutorial_taskflow_api_virtualenv', run_id='manual__2025-06-05T07:21:36.574267+00:00', try_number=1, map_index=-1, hostname='1596c6c95aae', context_carrier={}, task=<Task(_PythonDecoratedOperator): transform>, bundle_instance=LocalDagBundle(name=example_dags), max_tries=0, start_date=datetime.datetime(2025, 6, 5, 7, 21, 46, 893233, tzinfo=TzInfo(UTC)), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task"}

@@ -1,0 +1,26 @@
+{"timestamp":"2025-06-05T07:21:40.001633","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-06-05T07:21:40.002684","level":"info","event":"Filling up the DagBag from /home/airflow/.local/lib/python3.12/site-packages/airflow/example_dags/tutorial_taskflow_api_virtualenv.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-06-05T07:21:40.086909","level":"info","event":"Executing cmd: uv venv --allow-existing --seed --python python /tmp/venv661y6t5r","logger":"airflow.utils.process_utils"}
+{"timestamp":"2025-06-05T07:21:40.095882","level":"info","event":"Output:","logger":"airflow.utils.process_utils"}
+{"timestamp":"2025-06-05T07:21:40.902435Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-05T07:21:40.911961Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-05T07:21:40.913374Z","level":"info","event":"Current task name:extract","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-05T07:21:40.917833Z","level":"info","event":"Dag name:tutorial_taskflow_api_virtualenv","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-05T07:21:41.598340","level":"info","event":"Using CPython 3.12.10 interpreter at: /usr/local/bin/python","logger":"airflow.utils.process_utils"}
+{"timestamp":"2025-06-05T07:21:41.599407","level":"info","event":"Creating virtual environment with seed packages at: /tmp/venv661y6t5r","logger":"airflow.utils.process_utils"}
+{"timestamp":"2025-06-05T07:21:43.426910","level":"info","event":" + pip==25.1.1","logger":"airflow.utils.process_utils"}
+{"timestamp":"2025-06-05T07:21:43.481496","level":"info","event":"Executing cmd: uv pip install --python /tmp/venv661y6t5r/bin/python -r /tmp/venv661y6t5r/requirements.txt","logger":"airflow.utils.process_utils"}
+{"timestamp":"2025-06-05T07:21:43.490981","level":"info","event":"Output:","logger":"airflow.utils.process_utils"}
+{"timestamp":"2025-06-05T07:21:44.205058","level":"info","event":"Using Python 3.12.10 environment at: /tmp/venv661y6t5r","logger":"airflow.utils.process_utils"}
+{"timestamp":"2025-06-05T07:21:44.564034","level":"info","event":"Resolved 2 packages in 239ms","logger":"airflow.utils.process_utils"}
+{"timestamp":"2025-06-05T07:21:44.694937","level":"info","event":"Prepared 2 packages in 131ms","logger":"airflow.utils.process_utils"}
+{"timestamp":"2025-06-05T07:21:44.729767","level":"info","event":"Installed 2 packages in 31ms","logger":"airflow.utils.process_utils"}
+{"timestamp":"2025-06-05T07:21:44.730020","level":"info","event":" + dill==0.4.0","logger":"airflow.utils.process_utils"}
+{"timestamp":"2025-06-05T07:21:44.737474","level":"info","event":" + funcsigs==1.0.2","logger":"airflow.utils.process_utils"}
+{"timestamp":"2025-06-05T07:21:44.896989","level":"info","event":"Executing cmd: /tmp/venv661y6t5r/bin/python /tmp/venv-calliaty7y2f/script.py /tmp/venv-calliaty7y2f/script.in /tmp/venv-calliaty7y2f/script.out /tmp/venv-calliaty7y2f/string_args.txt /tmp/venv-calliaty7y2f/termination.log /tmp/venv-calliaty7y2f/airflow_context.json","logger":"airflow.utils.process_utils"}
+{"timestamp":"2025-06-05T07:21:44.902208","level":"info","event":"Output:","logger":"airflow.utils.process_utils"}
+{"timestamp":"2025-06-05T07:21:46.026575","level":"info","event":"Done. Returned value was: {'1001': 301.27, '1002': 433.21, '1003': 502.22}","logger":"airflow.task.operators.airflow.providers.standard.decorators.python_virtualenv._PythonVirtualenvDecoratedOperator"}
+{"timestamp":"2025-06-05T07:21:46.026979","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('01973ef7-7e7e-7b20-8096-7090ca7129ae'), task_id='extract', dag_id='tutorial_taskflow_api_virtualenv', run_id='manual__2025-06-05T07:21:36.574267+00:00', try_number=1, map_index=-1, hostname='1596c6c95aae', context_carrier={}, task=<Task(_PythonVirtualenvDecoratedOperator): extract>, bundle_instance=LocalDagBundle(name=example_dags), max_tries=0, start_date=datetime.datetime(2025, 6, 5, 7, 21, 38, 152981, tzinfo=TzInfo(UTC)), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task"}
+{"timestamp":"2025-06-05T07:21:46.195341Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-05T07:21:46.196122Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-05T07:21:46.196896Z","level":"info","event":"Task operator:<Task(_PythonVirtualenvDecoratedOperator): extract>","chan":"stdout","logger":"task"}
