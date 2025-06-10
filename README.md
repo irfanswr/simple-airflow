@@ -1,7 +1,7 @@
 # Airflow Docker Setup for Windows
 
 ## Struktur
-- `docker-compose.yaml`: konfigurasi resmi Airflow 2.9.0 dengan Postgres, Redis, Scheduler, Worker, Webserver
+- `docker-compose.yaml`: konfigurasi resmi Airflow 3.0.1 dengan Postgres, Redis, Scheduler, Worker, Webserver
 - `.env`: environment variable dengan AIRFLOW_UID=50000 (default untuk Windows)
 - folder `dags/`: tempat letak DAG kamu (ada contoh `example_dag.py`)
 - folder `logs/` dan `plugins/`: kosong, tapi wajib ada
